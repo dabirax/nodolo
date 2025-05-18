@@ -43,7 +43,7 @@ const server = http.createServer((req, res) => {
   //about page
   else if (url === "/about") {
     res.writeHead(200, { "content-type": "text/html" });
-    res.write(`<h1> Welcome to the About Page</h1>`);
+    res.write(`<h1> About Page</h1>`);
     res.end();
   }
 
