@@ -24,7 +24,7 @@ app.use("/api/v1/tasks", tasks);
 app.use(notFound);
 app.use(errorHandler);
 
-const port = 5175;
+const port = process.env.PORT || 5175;
 
 const start = async () => {
   try {
